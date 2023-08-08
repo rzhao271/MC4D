@@ -1,19 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion "33.0.1"
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.superliminal.magiccube4d"
         minSdkVersion 24
-        targetSdkVersion 33
+        targetSdkVersion 34
     }
 
     buildTypes {
         release {
         }
     }
+    namespace 'com.superliminal.magiccube4d'
 }
 
 dependencies {

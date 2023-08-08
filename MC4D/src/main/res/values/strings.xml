@@ -5,6 +5,8 @@
     <string name="_3d_rotate">" 3D Rotate"</string>
     <string name="_4d_rotate">" 4D Rotate"</string>
     <string name="about">About…</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
     <string name="scramble_fully">Full Scramble</string>
     <string name="scramble_1">1 Twist</string>
     <string name="scramble_2">2 Twists</string>

@@ -104,17 +104,6 @@ public class MC4DAndroid extends Activity {
         view.setInputMode(InputMode.ROT_3D);
         initTwistor(R.id.L, 1);
         initTwistor(R.id.R, -1);
-        initScrambler(R.id.scramble_1, 1);
-        initScrambler(R.id.scramble_2, 2);
-        initScrambler(R.id.scramble_3, 3);
-        initScrambler(R.id.scramble_full, FULLY);
-        Button b = (Button) findViewById(R.id.solve);
-        b.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                solve();
-            }
-        });
         // TODO: Call release() on these resources when finished:
         mCorrectSound = MediaPlayer.create(getApplicationContext(), R.raw.correct);
         mWipeSound = MediaPlayer.create(getApplicationContext(), R.raw.wipe);
@@ -218,6 +207,18 @@ public class MC4DAndroid extends Activity {
             changePuzzle(2);
         } else if(itemId == R.id.itemPuzzle3333) {
             changePuzzle(3);
+        } else if(itemId == R.id.itemUndo) {
+            if(!mHist.atScrambleBoundary()) {
+                MagicCube.TwistData last = mHist.undo();
+                if(last != null) {
+                    view.animate(last, false);
+                }
+            }
+        } else if(itemId == R.id.itemRedo) {
+            MagicCube.TwistData last = mHist.redo();
+            if (last != null) {
+                view.animate(last, false);
+            }
         } else {
             return false;
         }

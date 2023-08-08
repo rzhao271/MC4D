@@ -10,6 +10,12 @@
                 android:id="@+id/itemPuzzle3333" />
         </menu>
     </item>
+    <item
+        android:title="@string/undo"
+        android:id="@+id/itemUndo" />
+    <item
+        android:title="@string/redo"
+        android:id="@+id/itemRedo" />
     <item android:title="@string/scramble">
         <menu>
             <item

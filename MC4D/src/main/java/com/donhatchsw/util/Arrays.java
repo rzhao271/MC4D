@@ -1271,7 +1271,7 @@ public final class Arrays
                     do { if (!(end-i >= 3 && s.charAt(i+0) == '\'' && s.charAt(i+2) == '\'')) throw new Error("Assertion failed at "+"com/donhatchsw/util/Arrays.prejava"+"("+1263 +"): " + "end-i >= 3 && s.charAt(i+0) == '\\'' && s.charAt(i+2) == '\\''" + ""); } while (false);
 
 
-                    obj = new Character(s.charAt(i+1));
+                    obj = s.charAt(i + 1);
                     i += 3;
                     pos.setIndex(i);
                 }

@@ -1141,14 +1141,13 @@ public class NdSolve {
 			char colors[][] = PuzzleIO.getSignedAxisColors(n, d, puz);
 			java.util.HashMap<Character, int[]> letterToFaceCenterCubieCoords = new java.util.HashMap<Character, int[]>();
 			for (int iDim = 0; iDim < d; ++iDim) {
-				int stickerCoords[] = Arrays.repeat(0, d);
-				int cubieCoords[] = Arrays.repeat(0, d);
+				int[] stickerCoords = Arrays.repeat(0, d);
+				int[] cubieCoords = Arrays.repeat(0, d);
 				for (int sign = -1; sign <= 1; sign += 2) {
 					stickerCoords[iDim] = sign * (n + 1);
 					cubieCoords[iDim] = sign * (n - 1);
-					Character letter = new Character(
-							colors[iDim][(sign + 1) / 2]);
-					Assert(!Character.isWhitespace(letter.charValue()));
+					Character letter = colors[iDim][(sign + 1) / 2];
+					Assert(!Character.isWhitespace(letter));
 					Assert(!letterToFaceCenterCubieCoords.containsKey(letter));
 					// letterToFaceCenterCubieCoords.put(letter,
 					// Arrays.copy(cubieCoords)); // was doing this, but messes
@@ -4857,12 +4856,12 @@ public class NdSolve {
 			int iNonSpace = 0;
 			int nIndices = Arrays.intpow(n + 2, d);
 			for (int iIndex = 0; iIndex < nIndices; ++iIndex) {
-				int index[] = Arrays.unFlatIndex(iIndex, n + 2, d);
+				int[] index = Arrays.unFlatIndex(iIndex, n + 2, d);
 				if (PuzzleManipulation.isStickerIndex(n, d, index))
-					Arrays.set(puz, index, new Character(nonSpaces
-							.charAt(iNonSpace++)));
+					Arrays.set(puz, index, nonSpaces
+							.charAt(iNonSpace++));
 				else
-					Arrays.set(puz, index, new Character(' '));
+					Arrays.set(puz, index, ' ');
 			}
 			Assert(iNonSpace == nNonSpacesExpected);
 			return puz;
@@ -4876,7 +4875,7 @@ public class NdSolve {
 
 			java.util.HashMap<Character, int[]> colorCounts = new java.util.HashMap<Character, int[]>();
 			for (int i = 0; i < s.length(); ++i) {
-				Character c = new Character(s.charAt(i));
+				Character c = s.charAt(i);
 				if (!colorCounts.containsKey(c))
 					colorCounts.put(c, new int[] { 0 });
 				((int[]) colorCounts.get(c))[0]++;
@@ -4964,7 +4963,7 @@ public class NdSolve {
 					if (line.length() == 0)
 						continue;
 					for (int i = 0; i < line.length(); ++i) {
-						Character c = new Character(line.charAt(i));
+						Character c = line.charAt(i);
 						if (!colorCounts.containsKey(c))
 							colorCounts.put(c, new int[] { 0 });
 						(colorCounts.get(c))[0]++;
@@ -5096,7 +5095,7 @@ public class NdSolve {
 				}
 				for (int iDim = 0; iDim < d; ++iDim) {
 					char color = colors[iDim][0];
-					char oppositeColor = (colorToPossibleOpposites.get(new Character(color)))[0];
+					char oppositeColor = (colorToPossibleOpposites.get(color))[0];
 					if (n % 2 == 1) {
 						Assert(colors[iDim][1] == oppositeColor);
 					} else {

@@ -521,7 +521,7 @@ public class MC4DAndroidView extends View {
         }
 
         public void appendMark(char mark) {
-            queue.add(new Character(mark));
+            queue.add(mark);
         }
 
         public void finishedTwist() {

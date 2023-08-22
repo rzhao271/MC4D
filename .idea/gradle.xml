@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="jbr-17" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/AndroidUtils" />
-            <option value="$PROJECT_DIR$/MC4D" />
-          </set>
-        </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/AndroidUtils" />
-            <option value="$PROJECT_DIR$/MC4D" />
+            <option value="$USER_HOME$/Documents/mydocs/coding/MC4D" />
+            <option value="$USER_HOME$/Documents/mydocs/coding/MC4D/AndroidUtils" />
+            <option value="$USER_HOME$/Documents/mydocs/coding/MC4D/MC4D" />
           </set>
         </option>
       </GradleProjectSettings>

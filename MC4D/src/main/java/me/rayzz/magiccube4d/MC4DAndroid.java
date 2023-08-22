@@ -1,7 +1,7 @@
 package me.rayzz.magiccube4d;
 
 import android.app.Activity;
-import android.app.AlertDialog;
+//import android.app.AlertDialog;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.media.MediaPlayer;
@@ -226,17 +226,18 @@ public class MC4DAndroid extends Activity {
     } // end onOptionsItemSelected
 
     private void changePuzzle(int length) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(R.string.change_puzzle_warning)
-            .setPositiveButton(R.string.yes, (dialog, which) -> {
-                mHist.clear(length);
-                mPuzzleManager.initPuzzle(MagicCube.DEFAULT_PUZZLE, "" + length, new ProgressView(), new Graphics.Label(), false);
-                reset();
-            })
-            .setNegativeButton(R.string.no, (dialog, which) -> {
-            });
-        AlertDialog dialog = builder.create();
-        dialog.show();
+//        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//        builder.setMessage(R.string.change_puzzle_warning)
+//            .setPositiveButton(R.string.yes, (dialog, which) -> {
+        // For now, don't generate a dialog
+        mHist.clear(length);
+        mPuzzleManager.initPuzzle(MagicCube.DEFAULT_PUZZLE, "" + length, new ProgressView(), new Graphics.Label(), false);
+        reset();
+//            })
+//            .setNegativeButton(R.string.no, (dialog, which) -> {
+//            });
+//        AlertDialog dialog = builder.create();
+//        dialog.show();
     }
 
     private void solve() {

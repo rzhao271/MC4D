@@ -1,4 +1,4 @@
-package com.superliminal.magiccube4d;
+package me.rayzz.magiccube4d;
 /**
 * XXX does this class name suck?  well it sucks less than PolygonManager.
 *

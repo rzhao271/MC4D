@@ -1,4 +1,4 @@
-package com.superliminal.magiccube4d;
+package me.rayzz.magiccube4d;
 
 import android.content.Context;
 import android.util.Log;
@@ -7,7 +7,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.superliminal.magiccube4d.MagicCube.InputMode;
+import me.rayzz.magiccube4d.MagicCube.InputMode;
 import com.superliminal.util.PropertyManager;
 import com.superliminal.util.ResourceUtils;
 import com.superliminal.util.android.Color;

@@ -4,7 +4,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.superliminal.magiccube4d"
+        applicationId "me.rayzz.magiccube4d"
         minSdkVersion 24
         targetSdkVersion 34
     }
@@ -13,7 +13,7 @@ android {
         release {
         }
     }
-    namespace 'com.superliminal.magiccube4d'
+    namespace 'me.rayzz.magiccube4d'
 }
 
 dependencies {

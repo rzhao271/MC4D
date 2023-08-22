@@ -1,4 +1,4 @@
-package com.superliminal.magiccube4d;
+package me.rayzz.magiccube4d;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,7 +17,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.RadioButton;
 
-import com.superliminal.magiccube4d.MagicCube.InputMode;
+import me.rayzz.magiccube4d.MagicCube.InputMode;
 import com.superliminal.util.android.DialogUtils;
 import com.superliminal.util.android.EmailUtils;
 import com.superliminal.util.android.Graphics;

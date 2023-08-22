@@ -1,5 +1,5 @@
 package com.superliminal.test;
-import com.superliminal.magiccube4d.*;
+import me.rayzz.magiccube4d.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;

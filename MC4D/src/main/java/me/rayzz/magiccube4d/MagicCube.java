@@ -1,4 +1,4 @@
-package com.superliminal.magiccube4d;
+package me.rayzz.magiccube4d;
 
 import com.superliminal.util.android.Color;
 

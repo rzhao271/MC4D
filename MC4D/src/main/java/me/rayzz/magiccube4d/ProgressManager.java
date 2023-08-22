@@ -1,4 +1,4 @@
-package com.superliminal.magiccube4d;
+package me.rayzz.magiccube4d;
 
 /*
  * Subclass of SwingWorker that manages a JProgressBar and includes

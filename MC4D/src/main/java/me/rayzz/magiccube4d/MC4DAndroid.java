@@ -183,13 +183,14 @@ public class MC4DAndroid extends Activity {
                 e.printStackTrace();
             }
             String html =
-                    "<b><big>" + appNameStr + "</big><br>Copyright 2010 by Melinda Green <br>Superliminal Software</b><br>" +
-                            "<hr width=\"100%\" align=\"center\" size=\"1\"> <br>" +
+                    "<b><big>" + appNameStr + "</big><br>Copyright 2010 by Melinda Green (Superliminal Software),<br>" +
+                            "modified in 2023 by Raymond Zhao (Raynefork Software)<br>" +
+                            "</b><hr width=\"100%\" align=\"center\" size=\"1\"> <br>" +
                             "This version of Magic Cube 4D is a mobile version of the full-featured desktop application " +
-                            "from Superliminal.com. It lets you practice solving slightly randomized puzzles. " +
+                            "from https://superliminal.com/cube." +
                             "The hyperstickers (small cubes) are also twisting control axes. " +
                             "Highlight one using the green pointer and click the left or right twist buttons to twist that face. " +
-                            "<br><br>Send all questions and comments to <a href=\"mailto:feedback@superliminal.com\">feedback@superliminal.com</a>";
+                            "<br><br>Send all questions and comments to <a href=\"mailto:rzhao271.psaltdev@gmail.com\">mailto:rzhao271.psaltdev@gmail.com</a>";
             DialogUtils.showHTMLDialog(this, html);
         } else if(itemId == R.id.itemScramble1) {
             scramble(1);

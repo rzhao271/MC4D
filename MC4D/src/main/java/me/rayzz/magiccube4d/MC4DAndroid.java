@@ -187,10 +187,10 @@ public class MC4DAndroid extends Activity {
                             "modified in 2023 by Raymond Zhao (Raynefork Software)<br>" +
                             "</b><hr width=\"100%\" align=\"center\" size=\"1\"> <br>" +
                             "This version of Magic Cube 4D is a mobile version of the full-featured desktop application " +
-                            "from https://superliminal.com/cube." +
+                            "from https://superliminal.com/cube.<br>" +
                             "The hyperstickers (small cubes) are also twisting control axes. " +
                             "Highlight one using the green pointer and click the left or right twist buttons to twist that face. " +
-                            "<br><br>Send all questions and comments to <a href=\"mailto:rzhao271.psaltdev@gmail.com\">mailto:rzhao271.psaltdev@gmail.com</a>";
+                            "<br><br>Send all questions and comments to <a href=\"mailto:rzhao271.psaltdev@gmail.com\">rzhao271.psaltdev@gmail.com</a>";
             DialogUtils.showHTMLDialog(this, html);
         } else if(itemId == R.id.itemScramble1) {
             scramble(1);
